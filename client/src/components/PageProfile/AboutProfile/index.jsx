@@ -38,7 +38,8 @@ function AboutProfile({ userInformation }) {
   const { id } = useParams();
   const belongsMatchGroup = useSelector((state) => state.belongsMatchGroup);
   const [friendsAvatars, setFriendsAvatars] = useState([]);
-  const URL = import.meta.env.VITE_URL_RAILWAY;
+  //const URL = import.meta.env.VITE_URL_RAILWAY;
+  const URL = "https://henrygram.adaptable.app";
 
   useEffect(() => {
     try {

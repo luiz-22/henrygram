@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate, useParams } from "react-router-dom";
 import axios from "axios";
-const URL = import.meta.env.VITE_URL_RAILWAY;
+//const URL = import.meta.env.VITE_URL_RAILWAY;
+const URL = 'https://henrygram.adaptable.app'
 import {
   chatTimeReal,
   getMessageByUserBackAction,

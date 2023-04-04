@@ -48,7 +48,8 @@ export const SET_LOADING = "SET_LOADING";
 //USERS INFORMATION
 //REGISTER
 
-const URL = import.meta.env.VITE_URL_RAILWAY;
+//const URL = import.meta.env.VITE_URL_RAILWAY;
+const URL = 'https://henrygram.adaptable.app'
 
 export const createUser = (user) => {
   return async function (dispatch) {

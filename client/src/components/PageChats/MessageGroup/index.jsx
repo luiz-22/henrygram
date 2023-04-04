@@ -15,7 +15,8 @@ import CardMessage from "../CardMessage";
 import SendMessage from "../SendMessage";
 import styles from "./index.module.css";
 import Loader from "../../Loader";
-const URL = import.meta.env.VITE_URL_RAILWAY;
+//const URL = import.meta.env.VITE_URL_RAILWAY;
+const URL = 'https://henrygram.adaptable.app'
 
 function MessageGroup() {
   const chatByUser = useSelector((state) => state.chatByUser);
