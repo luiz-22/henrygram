@@ -31,5 +31,6 @@
   },
   "devDependencies": {
     "eslint": "^8.29.0"
-  }
+  },
+  "proxy": "https://henrygram.adaptable.app/api/users"
 }
