@@ -31,6 +31,8 @@ import ViewPost from "./components/PagePostDetail/viewPost";
 import SideBar from "./components/SideBar";
 import MessageGroup from "./components/PageChats/MessageGroup";
 import notFound from "../src/assets/404.png";
+
+
 function App() {
   const [saveTokenData, setSaveTokenData] = useState(null);
   const userInformation = useSelector((state) => state.userInformation);
