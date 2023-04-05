@@ -10,8 +10,7 @@ import { useParams } from "react-router-dom";
 import logoMatch from "../../../assets/coheteHenry.png";
 import axios from "axios";
 import Loader from "../../Loader";
-//const URL = import.meta.env.VITE_URL_RAILWAY;
-const URL = "https://henrygram.adaptable.app";
+const URL = import.meta.env.VITE_URL_RAILWAY;
 function PostProfile({ userInformation }) {
   const postUser = useSelector((state) => state.userPostsProfile);
   const userlogged = useSelector((state) => state.userInformation);
@@ -42,7 +41,8 @@ function PostProfile({ userInformation }) {
       axios
         .get(
           `${`${
-            "https://henrygram.adaptable.app" || "http://localhost:3000"
+            "https://henrygram-production.up.railway.app" ||
+            "http://localhost:3000"
           }/api/posts/user?id=${id}&limit=${page}`}`
         )
         .then((response) => {

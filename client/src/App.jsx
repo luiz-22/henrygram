@@ -2,8 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
-//const URL = import.meta.env.VITE_URL_RAILWAY;
-const URL = 'https://henrygram.adaptable.app'
+const URL = import.meta.env.VITE_URL_RAILWAY;
 const socket = io(`${URL || "http://localhost:3000"}`);
 import "./App.css";
 import {

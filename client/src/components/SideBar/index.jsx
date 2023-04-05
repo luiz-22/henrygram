@@ -12,8 +12,7 @@ import {
 import CardUser from "../CardUser";
 import DropDown from "../DropDown/DropDown";
 import { UserPlusIcon } from "@heroicons/react/20/solid";
-//const URL = import.meta.env.VITE_URL_RAILWAY;
-const URL = 'https://henrygram.adaptable.app'
+const URL = import.meta.env.VITE_URL_RAILWAY;
 
 function SideBar() {
   const searchUser = useSelector((state) => state.searchUser);

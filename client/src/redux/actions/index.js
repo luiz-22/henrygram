@@ -48,8 +48,8 @@ export const SET_LOADING = "SET_LOADING";
 //USERS INFORMATION
 //REGISTER
 
-//const URL = import.meta.env.VITE_URL_RAILWAY;
-const URL = 'https://henrygram.adaptable.app'
+ const URL = import.meta.env.VITE_URL_RAILWAY;
+
 
 export const createUser = (user) => {
   return async function (dispatch) {
@@ -497,7 +497,8 @@ export const likeDislikePostAction = (data) => {
   return async (dispatch) => {
     try {
       await axios.post(
-        `${URL || "http://localhost:3000"}/api/posts/like?postId=${data.postId
+        `${URL || "http://localhost:3000"}/api/posts/like?postId=${
+          data.postId
         }&userId=${data.userId}`,
         data
       );

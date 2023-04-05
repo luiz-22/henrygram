@@ -7,8 +7,7 @@ import MakePost from "../MakePost";
 import Post from "../Post";
 import RecommendedFriends from "../RecommendedFriends";
 import Loader from "../../Loader";
-//const URL = import.meta.env.VITE_URL_RAILWAY;
-const URL = 'https://henrygram.adaptable.app'
+const URL = import.meta.env.VITE_URL_RAILWAY;
 function Home() {
   const dispatch = useDispatch();
   const postUsers = useSelector((state) => state.allPosts);

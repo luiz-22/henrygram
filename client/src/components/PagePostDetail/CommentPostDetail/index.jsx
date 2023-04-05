@@ -7,8 +7,7 @@ import CardComment from "../CardComment";
 import axios from "axios";
 import Loader from "../../Loader";
 import { useSelector } from "react-redux";
-//const URL = import.meta.env.VITE_URL_RAILWAY;
-const URL = 'https://henrygram.adaptable.app'
+const URL = import.meta.env.VITE_URL_RAILWAY;
 
 function CommentPostDetail({ comments, user, group, postId, likes, isMatch }) {
   const [commentFront, setCommentFront] = useState([]);
