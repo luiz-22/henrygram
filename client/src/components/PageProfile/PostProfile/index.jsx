@@ -41,8 +41,7 @@ function PostProfile({ userInformation }) {
       axios
         .get(
           `${`${
-            "https://henrygram-production.up.railway.app" ||
-            "http://localhost:3000"
+            URL || "http://localhost:3000"
           }/api/posts/user?id=${id}&limit=${page}`}`
         )
         .then((response) => {
